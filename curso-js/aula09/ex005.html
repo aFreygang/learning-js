@@ -1,0 +1,32 @@
+ <!DOCTYPE html>
+ <html lang="pt-BR">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Learning DOM</title>
+     <style>
+         body{
+             background: rgb(62, 45, 216);
+             color: white;
+             font: normal 18pt Arial;
+         }
+     </style>
+ </head>
+ <body>
+     <h1>Aprendendo DOM</h1>
+     <p>Resultado</p>
+     <p>Larning <strong>DOM</strong> in JavaScript</p>
+     <div id="msg">Clique</div>
+     <script>
+         var p1 = window.document.getElementsByTagName('p')[0] // Pegando elementos por nome
+         /*
+         var d = window.document.getElementById('msg')
+         d.style.background = 'red'
+         window.document.getElementById('msg')
+         d.innerText = 'Olá!''
+         */
+         var d = document.querySelector('div#msg') // Selecionando query 
+         d.style.color = 'blue'
+     </script>
+ </body>
+ </html>

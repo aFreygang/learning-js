@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <style> /* CSS */
+        body { 
+            font: normal 100% Arial;
+            text-align: center;
+            background-color: rgb(48, 47, 47);
+            color: white;        
+        }
+        
+        input {
+            font: normal 100% Arial;
+        }
+
+        div#resultado {
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Somando Valores</h1>
+
+    <div id='inputs'> <!-- Opções de input -->
+    <input type="number" name="number1" id="number1" max="7000" min="-50">
+    <h3>+</h3>
+    <input type="number" name="number2" id="number2" max="7000" min="-50"><br><br>
+    <input type="button" value="Somar" onclick="somar()">
+    </div>
+
+    <div id='resultado'>
+        <h2>Resultado</h2>
+    </div>
+
+    <script>
+        function somar() { // Recebendo o número digitado e entregando a ação solicitada
+            var number1 = document.getElementById('number1')
+            var number2 = document.querySelector('input#number2')
+            var resultado = document.querySelector('div#resultado')
+            var n1 = Number(number1.value)
+            var n2 = Number(number2.value)
+            var soma = n1 + n2
+            resultado.innerHTML = `Sua soma é: ${soma}`
+
+        }
+    </script>
+</body>
+</html>
