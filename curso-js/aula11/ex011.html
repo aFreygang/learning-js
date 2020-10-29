@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passport</title>
+</head>
+
+<body>
+    <h1>Questionário</h1>
+    <p>Onde nasceu?
+        <input type="text" name="born" id="born">
+    </p>
+    <input type="button" value="Submit" onclick="nasceu()">
+
+    <div id="resultado">
+
+    </div>
+    <script>
+        function nasceu() {
+            var born = document.querySelector('input#born')
+            var res = document.querySelector('div#resultado')
+            var uborn = String(born.value)
+            if (uborn == 'Brasil') {
+                res.innerHTML = "Bem-vindo"
+            } else {
+                res.innerHTML = "Desculpe, você não poderá participar!"
+            }
+        }
+    </script>
+</body>
+
+</html>
