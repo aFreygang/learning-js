@@ -1,0 +1,32 @@
+:root
+
+body {
+    background: #91C2E1;
+    font: normal 18pt Consolas;
+    color: #34826C;
+    text-align: center;
+}
+
+#bemvindo {
+    background: #C7E6CF;
+    border: solid 1px #a6dab3;
+    padding: 20px;
+    margin: -15px;
+    height: 100px;
+    font-weight: 80%;
+    border-radius: 25px;
+}
+
+#bom {
+    width: 10px;
+    margin: -10px
+}
+
+#data{
+    padding: 20px;
+    background: #34826C;
+    color: #91C2E1;
+    border-radius: 25px;
+}
+
+
