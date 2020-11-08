@@ -1,0 +1,68 @@
+body {
+    background: rgb(132, 132, 216);
+    font: normal 15pt consolas;
+    text-align: center;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+section {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.342);
+}
+
+#button {
+    background:  rgb(132, 132, 216);
+    border-radius: 8px;
+    box-shadow: 1px 1px 15px gray;
+    color: white;
+    font: normal 13pt consolas;
+}
+
+#button:hover {
+    transition: 1s;
+    background:  rgb(103, 103, 168);
+    cursor: pointer;
+}
+
+#txtano {
+    border-radius: 15px;
+    text-align: center;
+    font: normal 15pt consolas;
+    width: 100px;
+}
+
+#txtano:hover {
+    transition: 1s;
+    background:  rgb(207, 207, 207);
+}
+
+#sexyear{
+    margin: auto;
+    background: rgb(132, 132, 216);
+    color: white;
+    width: 150px;
+    border-radius: 10px;
+    font: normal 20pt consolas;
+    padding: 10px;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+    border-radius: 500px;
+    padding-top: 25px;
+}
